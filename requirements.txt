@@ -1,0 +1,4 @@
+browser-use
+langchain_openai
+asyncio
+dotenv
