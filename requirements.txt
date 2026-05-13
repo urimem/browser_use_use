@@ -1,4 +1,5 @@
 browser-use
 langchain-ollama
+ollama
 asyncio
 dotenv
