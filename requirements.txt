@@ -1,4 +1,4 @@
 browser-use
-langchain_openai
+langchain-ollama
 asyncio
 dotenv
