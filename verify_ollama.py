@@ -3,7 +3,7 @@ import sys
 import httpx
 from ollama import ResponseError, chat
 
-MODEL = "qwen3-vl:8b"
+MODEL = "gemma2:2b" # "qwen3-vl:8b"
 PROMPT = "What is the capital of France? Answer in one short sentence."
 
 

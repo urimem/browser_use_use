@@ -38,10 +38,15 @@ source .venv/bin/activate  # On Windows, use: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. Create a `.env` file in the project root and add your OpenAI API key:
-```
-OPENAI_API_KEY=your_api_key_here
-```
+## Connect to Chrome browser - Using Chrome DevTools Protocol (CDP)
+
+To test this locally, follow these steps:
+1. Find the chrome executable file.
+2. On mac by default, the chrome is in `/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --user-data-dir=$(mktemp -d -t 'chrome-remote')`
+3. Add the following argument to the shortcut:
+   `--remote-debugging-port=9222`
+4. Open a web browser and navigate to `http://localhost:9222/json/version` to verify that the Remote Debugging Protocol (CDP) is running.
+5. Launch this test.
 
 ## Usage
 
